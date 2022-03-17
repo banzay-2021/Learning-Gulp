@@ -43,7 +43,8 @@ let {src, dest} = require('gulp'),
     webpcss = require('gulp-webpcss'),
     svgSprite = require('gulp-svg-sprite'),
     ttf2woff = require('gulp-ttf2woff'),
-    ttf2woff2 = require('gulp-ttf2woff2');
+    ttf2woff2 = require('gulp-ttf2woff2'),
+    fonter = require('gulp-fonter-unx');
 
 function browserSync(params) {
     browsersync.init({
@@ -150,6 +151,16 @@ function fonts() {
         .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts));
 }
+
+gulp.task('otf2ttf', function () {
+    return gulp.src([source_folder + '/fonts/*.otf'])
+        .pipe(
+            fonter({
+                formats: ['ttf']
+            })
+        )
+        .pipe(dest(source_folder + '/fonts/'))
+})
 
 gulp.task('svgSprite', function () {
     return gulp.src([source_folder + '/iconsprite/*.svg'])
