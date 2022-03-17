@@ -1,0 +1,35 @@
+body {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+span {
+  font-size: 20px;
+}
+
+div {
+  font-size: 30px;
+}
+
+.no-webp div.pic {
+  background: url("../img/IMG_20211207_202042.jpg") 0 0 no-repeat; }
+
+div.pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  span {
+    font-size: 15px;
+  }
+
+  div {
+    font-size: 20px;
+  }
+}
+
+.webp div.pic { background: url(../img/IMG_20211207_202042.webp) 0 0 no-repeat; }
