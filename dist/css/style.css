@@ -1,3 +1,43 @@
+@font-face {
+  font-family: "DynaGroteskLM-Bold";
+  font-display: swap;
+  src: url("../fonts/DynaGroteskLM-Bold.woff") format("woff"), url("../fonts/DynaGroteskLM-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  font-display: swap;
+  src: url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-BlackItalic";
+  font-display: swap;
+  src: url("../fonts/Roboto-BlackItalic.woff") format("woff"), url("../fonts/Roboto-BlackItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DynaGroteskLM-Bold";
+  font-display: swap;
+  src: url("../fonts/DynaGroteskLM-Bold.woff") format("woff"), url("../fonts/DynaGroteskLM-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-size: 15px;
   display: -webkit-box;
